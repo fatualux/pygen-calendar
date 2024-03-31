@@ -1,6 +1,6 @@
 # PYGEN-CALENDAR (HTML Calendar Generator)
 
-[./demo/demo.gif](./demo/demo.mp4)
+![](./demo/demo.gif)
 
 This script generates an HTML calendar for a given month and year.
 The name of months and days are in Italian.
