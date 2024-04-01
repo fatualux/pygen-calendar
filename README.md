@@ -18,7 +18,7 @@ python pygen-calendar.py
 2. **Enter Font Name**: Enter the name of the font family when prompted. This font will be used for the ientire calendar.
 3. **Input Year and Month**: Provide the year and month for which you want to generate the calendar.
 4. **Add Notes**: Optionally, add notes to specific dates by following the prompts; newlines are supported (with the escape character '\n').
-5. **Output**: The script will generate an HTML file with the calendar and a corresponding CSS file for styling. (Note that the font file/s must be in the same directory as the script.)
+5. **Output**: The script will generate an HTML file with the calendar and a corresponding CSS file for styling. (Note that the font file/s must be in the same directory as the HTML file.)
 
 ## Dependencies
 
