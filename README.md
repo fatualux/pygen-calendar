@@ -2,9 +2,9 @@
 
 ![](./demo/demo.gif)
 
-This script generates an HTML calendar for a given month and year.
-The name of months and days are in Italian.
-Users can add notes to specific dates and customize thr appearance (font, color); an CSS file will be generated for styling the calendar.
+This script generates an HTML calendar for a given month and year. </br>
+The name of months and days are in Italian. <br/>
+Users can add notes to specific dates and customize thr appearance (font, color); a CSS file will be generated for styling the calendar.
 
 ## Usage
 
