@@ -11,7 +11,7 @@ Users can add notes to specific dates and customize thr appearance (font, color)
 ```
 git clone https://gitlab.com/fatualux/pygen-calendar && cd pygen-calendar
 ```
-1. **Run the Script**: Execute the script `html-calendar-generator.py`.
+1. **Run the Script**:
 ```
 python pygen-calendar.py
 ```
