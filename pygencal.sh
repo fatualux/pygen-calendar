@@ -43,6 +43,8 @@ copy_files() {
   cp -r $STATIC_FILE $WORKDIR
   echo "Copying template files..."
   cp -r $TEMPLATE_FILE $WORKDIR
+  echo "Copying modules..."
+    cp -r $UTILS_FILE $WORKDIR
   echo ""
   echo "Done."
 }
@@ -76,7 +78,7 @@ venv_verify() {
 starting_app() {
   echo "Starting application..."
   echo ""
-  python $WORKDIR/$APP_FILE
+  cd $WORKDIR && python $APP_FILE
 }
 
 dependency_check

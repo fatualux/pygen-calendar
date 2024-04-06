@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calendar Result</title>
+    <title>Generated Calendar</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='calendar_style.css') }}">
 </head>
 <body>
-    <h1>Calendar Result</h1>
-    <!-- Display generated calendar here -->
-    {% include 'generated_calendar.html' %}
+    {{ calendar_html | safe }}
 </body>
 </html>
