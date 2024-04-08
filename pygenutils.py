@@ -26,36 +26,36 @@ def add_notes(month_calendar):
 
 def generate_css(font_name):
     css_content = f'''
-  @font-face {{
+    @font-face {{
         font-family: '{font_name}';
         font-weight: normal;
         font-style: normal;
         font-display: swap;
     }}
     body {{
-
         background-color: #f2f2f2;
         font-family: '{font_name}', Arial, sans-serif;
     }}
-        table {{
-            width: 33%;
-            border-collapse: collapse;
-            border-left: none;
-            border-right: none;
-        }}
-        th, td {{
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #000000;
-            text-align: center;
-            border-left: none;
-            border-right: none;
-            border-collapse: collapse;
-        }}
-        tr:hover {{
-            background-color: #f5f5f5;
-        }}
+    table {{
+        width: 33%;
+        border-collapse: collapse;
+        border-left: none;
+        border-right: none;
+    }}
+    th, td {{
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #000000;
+        text-align: center;
+        border-left: none;
+        border-right: none;
+        border-collapse: collapse;
+    }}
+    tr:hover {{
+        background-color: #f5f5f5;
+    }}
     '''
+
     with open("calendar_style.css", "w") as css_file:
         css_file.write(css_content)
     print("CSS file generated: calendar_style.css")

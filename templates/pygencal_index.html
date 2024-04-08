@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pygencal.css') }}">
     <title>Generate Calendar</title>
 </head>
 <body>
-    <h1>Generate Calendar</h1>
     <form action="/generate_calendar" method="post">
         <label for="year">Year:</label>
         <input type="number" id="year" name="year" required><br><br>
@@ -18,4 +18,3 @@
     </form>
 </body>
 </html>
-
