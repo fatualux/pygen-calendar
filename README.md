@@ -24,6 +24,10 @@ python pygen-calendar.py
 
 This script requires Python 3.x and the `calendar` module.
 
+## Notes
+
+Font files must be placed in the **static+** directory.
+
 ## LICENSE
 
 [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
