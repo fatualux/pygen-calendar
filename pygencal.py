@@ -1,12 +1,19 @@
 from flask import Flask, render_template, request
 import calendar
-from pygenutils import linkify, add_notes, generate_css, italian_weekday_abbr
+import os
+from utils import linkify, add_notes, generate_css, italian_weekday_abbr
 
 app = Flask(__name__)
 
 # Define Italian month names
-italian_month_names = ['', 'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
-                       'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre']
+italian_month_names = ['', 'Gennaio', 'Febbraio', 'Marzo', 'Aprile',
+                        'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre',
+                       'Ottobre', 'Novembre', 'Dicembre']
+
+# Create HTML folder if it doesn't exist
+html_folder = 'HTML'
+if not os.path.exists(html_folder):
+    os.makedirs(html_folder)
 
 # Route to handle form submission and display result
 @app.route('/generate_calendar', methods=['POST'])
@@ -25,7 +32,7 @@ def generate_calendar():
 
     # Generate HTML content
     output = f'<!DOCTYPE html>\n<html>\n<head>\n<title>{italian_month_names[month]} {year}</title>\n'
-    output += f'<link rel="stylesheet" type="text/css" href="{{ url_for(\'static\', filename=\'calendar_style.css\') }}">\n</head>\n<body>\n'
+    output += f'<link rel="stylesheet" type="text/css" href="{os.path.join("calendar_style.css")}">\n</head>\n<body>\n'
 
     # Generate table
     output += f'<table border="1">\n<tr><th colspan="7"><h1>{italian_month_names[month]} {year}</h1></th></tr>\n'
@@ -51,6 +58,11 @@ def generate_calendar():
 
     output += '</table>\n</body>\n</html>'
 
+    # Save HTML file
+    filename = os.path.join(html_folder, f"{year}-{month}.html")
+    with open(filename, 'w') as f:
+        f.write(output)
+
     # Render template with generated calendar content
     return render_template('pygencal_result.html', calendar_html=output)
 
@@ -58,6 +70,7 @@ def generate_calendar():
 @app.route('/')
 def index():
     return render_template('pygencal_index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

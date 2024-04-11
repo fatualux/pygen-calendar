@@ -13,9 +13,8 @@ deactivate_venv() {
 trap deactivate_venv SIGINT
 
 dependency_check() {
-  if command -v virtualenv &> /dev/null; then
+  if command -v $VENV_COMMAND &> /dev/null; then
     echo "vOk, virtualenv package is installed on your system."
-    export VENV_COMMAND=virtualenv
   else
     echo "A suitable Python virtual environment is not installed on your system."
     echo "Please install virtualenv and try again."
@@ -25,6 +24,11 @@ dependency_check() {
 }
 
 venv_create() {
+  # Remove venv directory if it exists
+  if [ -d "$WORKDIR" ]; then
+    rm -rf $WORKDIR
+    echo "Old virtual environment deleted."
+  fi
   echo "Starting Python Virtual Environment setup..."
   echo ""
   echo "Python Virtual Environment not found. Creating..."
@@ -62,19 +66,6 @@ install_req() {
   echo "Done."
 }
 
-venv_verify() {
-  if [ -d "$WORKDIR" ]; then
-    venv_activate
-    install_req
-  else
-    venv_create
-    copy_files
-    venv_activate
-    install_req
-  fi
-}
-
-
 starting_app() {
   echo "Starting application..."
   echo ""
@@ -82,5 +73,8 @@ starting_app() {
 }
 
 dependency_check
-venv_verify
+venv_create
+copy_files
+venv_activate
+install_req
 starting_app
