@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Read configuration from venv.cfg file
-source ./pygencal.cfg
+source ./venv.cfg
 
 deactivate_venv() {
   echo "Deactivating virtual environment..."

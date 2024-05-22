@@ -2,8 +2,18 @@ from flask import Flask, render_template, request
 import calendar
 import os
 from utils import linkify, add_notes, generate_css, italian_weekday_abbr
+import webbrowser
 
 app = Flask(__name__)
+
+# Function to open browser on server startup
+def startup_server(address, port):
+    if os.name == 'nt':
+        address = '127.0.0.1'
+    webbrowser.open(f"http://{address}:{port}")
+
+
+startup_server('0.0.0.0', 5000)
 
 # Define Italian month names
 italian_month_names = ['', 'Gennaio', 'Febbraio', 'Marzo', 'Aprile',
@@ -14,6 +24,7 @@ italian_month_names = ['', 'Gennaio', 'Febbraio', 'Marzo', 'Aprile',
 html_folder = 'HTML'
 if not os.path.exists(html_folder):
     os.makedirs(html_folder)
+
 
 # Route to handle form submission and display result
 @app.route('/generate_calendar', methods=['POST'])
