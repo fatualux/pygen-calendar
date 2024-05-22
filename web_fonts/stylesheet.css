@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'SB Skate blade';
+    src: url('SBSkateblade-Regular.woff2') format('woff2'),
+        url('SBSkateblade-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stop Bullying';
+    src: url('StopBullying.woff2') format('woff2'),
+        url('StopBullying.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Small Print';
+    src: url('SmallPrint.woff2') format('woff2'),
+        url('SmallPrint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Requiem';
+    src: url('Requiem-Regular.woff2') format('woff2'),
+        url('Requiem-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Techno';
+    src: url('Techno-Regular.woff2') format('woff2'),
+        url('Techno-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tote Bag';
+    src: url('ToteBag-Regular.woff2') format('woff2'),
+        url('ToteBag-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Traffic';
+    src: url('Traffic-Regular.woff2') format('woff2'),
+        url('Traffic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sketch';
+    src: url('Sketch-Regular.woff2') format('woff2'),
+        url('Sketch-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Small Print';
+    src: url('SmallPrint.woff2') format('woff2'),
+        url('SmallPrint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Santello';
+    src: url('Santello-Regular.woff2') format('woff2'),
+        url('Santello-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Venec';
+    src: url('Venec-Regular.woff2') format('woff2'),
+        url('Venec-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Terserah';
+    src: url('Terserah.woff2') format('woff2'),
+        url('Terserah.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sword';
+    src: url('Sword-Regular.woff2') format('woff2'),
+        url('Sword-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Turkey';
+    src: url('Turkey-Regular.woff2') format('woff2'),
+        url('Turkey-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tron';
+    src: url('Tron-Regular.woff2') format('woff2'),
+        url('Tron-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Terserah';
+    src: url('Terserah.woff2') format('woff2'),
+        url('Terserah.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Stop Bullying';
+    src: url('StopBullying.woff2') format('woff2'),
+        url('StopBullying.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Skyscape';
+    src: url('Skyscape-Regular.woff2') format('woff2'),
+        url('Skyscape-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Paris';
+    src: url('Paris-Regular.woff2') format('woff2'),
+        url('Paris-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oseberg';
+    src: url('Oseberg-Regular.woff2') format('woff2'),
+        url('Oseberg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfulist';
+    src: url('Playfulist.woff2') format('woff2'),
+        url('Playfulist.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mbkaos';
+    src: url('Mbkaos-Light.woff2') format('woff2'),
+        url('Mbkaos-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfulist';
+    src: url('Playfulist.woff2') format('woff2'),
+        url('Playfulist.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Notre Dame';
+    src: url('NotreDame-Regular.woff2') format('woff2'),
+        url('NotreDame-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Design';
+    src: url('ProductDesign-Regular.woff2') format('woff2'),
+        url('ProductDesign-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rifles';
+    src: url('Rifles-Regular.woff2') format('woff2'),
+        url('Rifles-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orion';
+    src: url('Orion-Regular.woff2') format('woff2'),
+        url('Orion-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mystician';
+    src: url('Mystician-Regular.woff2') format('woff2'),
+        url('Mystician-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Orbit';
+    src: url('Orbit-Regular.woff2') format('woff2'),
+        url('Orbit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poros';
+    src: url('Poros-Regular.woff2') format('woff2'),
+        url('Poros-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

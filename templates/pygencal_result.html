@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Calendar</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='calendar_style.css') }}">
+</head>
+<body>
+    {{ calendar_html | safe }}
+</body>
+</html>
