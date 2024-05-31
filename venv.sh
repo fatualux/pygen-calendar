@@ -43,10 +43,10 @@ copy_files() {
   cp $REQUIREMENTS_FILE $WORKDIR
   echo "Copying application file..."
   cp $APP_FILE $WORKDIR
-  echo "Copying static files..."
-  cp -r $STATIC_FILE $WORKDIR
+  echo "Copying static directory..."
+  cp -r $STATIC_DIR $WORKDIR
   echo "Copying template files..."
-  cp -r $TEMPLATE_FILE $WORKDIR
+  cp -r $TEMPLATE_DIR $WORKDIR
   echo "Copying modules..."
     cp -r $UTILS_FILE $WORKDIR
   echo ""
