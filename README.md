@@ -4,7 +4,7 @@
 
 This script generates an HTML calendar for a given month and year. </br>
 This is the webapp version, made with Flask.
-The name of months and days are in Italian. <br/>
+The names of months and days are in Italian. <br/>
 Users can add notes to specific dates and customize thr appearance (font, color); a CSS file will be generated for styling the calendar.
 
 ## Usage
